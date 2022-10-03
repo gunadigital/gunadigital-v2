@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root {
+        --primary: #019bfb;
+        --secondary: #243047;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-1;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-neutral-100;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--secondary);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #18202f;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply subpixel-antialiased;
+        font-family: "Inter", sans-serif;
+    }
+
+    a.text-primary:hover {
+        color: #018be0;
+    }
+
+    a.text-secondary:hover {
+        color: #18202f;
+    }
+
+    .bg-primary {
+        background-color: var(--primary);
+    }
+
+    .bg-secondary {
+        background-color: var(--secondary);
+    }
+
+    .border-primary {
+        border-color: var(--primary);
+    }
+
+    .border-secondary {
+        border-color: var(--secondary);
+    }
+
+    .btn {
+        @apply px-4 py-1 text-center transition duration-300 ease-in-out rounded-md lg:py-2 lg:px-6 lg:rounded-full lg:text-base lg:font-normal;
+    }
+
+    .btn-primary {
+        @apply text-white;
+        background-color: var(--primary);
+    }
+
+    .btn-primary:focus {
+        @apply ring;
+        --tw-ring-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+        background-color: #018be0;
+    }
+
+    .btn-secondary {
+        @apply text-white;
+        background-color: var(--secondary);
+    }
+
+    .btn-secondary:focus {
+        @apply ring;
+        --tw-ring-color: var(--secondary);
+    }
+
+    .btn-secondary:hover {
+        background-color: #18202f;
+    }
+
+    .card {
+        @apply box-border w-full overflow-hidden bg-white;
+    }
+
+    .card-body {
+        @apply box-border p-4 lg:p-10;
+    }
+
+    .card-text {
+        @apply text-xs text-center text-secondary lg:text-sm;
+    }
+
+    .col {
+        @apply box-border w-full;
+    }
+
+    .col-1 {
+        @apply box-border w-1/12;
+    }
+
+    .col-2 {
+        @apply box-border w-1/12;
+    }
+
+    .col-3 {
+        @apply box-border w-1/4;
+    }
+
+    .col-4 {
+        @apply box-border w-1/3;
+    }
+
+    .col-5 {
+        @apply box-border w-5/12;
+    }
+
+    .col-6 {
+        @apply box-border w-1/2;
+    }
+
+    .col-7 {
+        @apply box-border w-7/12;
+    }
+
+    .col-8 {
+        @apply box-border w-2/3;
+    }
+
+    .col-9 {
+        @apply box-border w-3/4;
+    }
+
+    .col-10 {
+        @apply box-border w-5/6;
+    }
+
+    .col-11 {
+        @apply box-border w-11/12;
+    }
+
+    .col-12 {
+        @apply box-border block w-full;
+    }
+
+    .dropdown {
+        @apply relative;
+    }
+
+    .header {
+        @apply fixed top-0 z-40 w-full h-10 py-2 bg-white shadow lg:h-16;
+    }
+
+    .nav-link {
+        @apply block text-center transition duration-300 ease-in-out lg:inline-block text-secondary lg:font-normal lg:text-base hover:text-primary;
+    }
+
+    .nav-link.active {
+        color: var(--primary);
+    }
+
+    .navbar {
+        @apply flex items-center justify-between;
+    }
+
+    .navbar-brand {
+        @apply inline-block;
+    }
+
+    .navbar-brand > img {
+        @apply h-6 lg:h-12;
+    }
+
+    .navbar-nav {
+        @apply absolute left-0 right-0 hidden w-full p-4 transition duration-300 ease-in-out bg-white lg:flex lg:w-auto lg:relative top-10 lg:gap-x-7 gap-y-1 border-y lg:flex-row lg:top-0 lg:border-y-0 lg:items-center lg:p-0;
+    }
+
+    .navbar-toggle {
+        @apply absolute py-0.5 px-1 right-3 lg:hidden;
+    }
+
+    .navbar-toggle.active > .navbar-toggle-item:nth-child(1) {
+        @apply -rotate-[22.5deg];
+    }
+
+    .navbar-toggle.active > .navbar-toggle-item:nth-child(2) {
+        @apply scale-0;
+    }
+
+    .navbar-toggle.active > .navbar-toggle-item:nth-child(3) {
+        @apply rotate-[22.5deg];
+    }
+
+    .navbar-toggle-item {
+        @apply block w-8 h-0.5 my-1 bg-secondary transition duration-300 ease-in-out;
+    }
+
+    .ring-primary {
+        --tw-ring-color: var(--primary);
+    }
+
+    .ring-secondary {
+        --tw-ring-color: var(--secondary);
+    }
+
+    .round {
+        @apply overflow-hidden rounded-full h-16 w-16 p-5 mb-2 lg:p-[3.25rem] lg:w-48 lg:h-48 lg:mb-4 mx-auto bg-white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .row {
+        @apply box-border flex;
+    }
+
+    .section {
+        @apply py-10 overflow-hidden lg:py-20;
+    }
+
+    .section-title {
+        @apply text-xl font-semibold text-center text-secondary lg:text-5xl;
+    }
+
+    .text-primary {
+        color: var(--primary);
+    }
+
+    .text-secondary {
+        color: var(--secondary);
+    }
+
+    .text-stroke {
+        -webkit-text-stroke: 1px white;
+    }
+}
